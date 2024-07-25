@@ -10,11 +10,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 103, 137, 1),
           title: Center(child: Text('hello World')),
         ),
+        backgroundColor: Color.fromARGB(255, 86, 254, 1),
         body: Center(
-          child: ElevatedButton(
-              onPressed: () {}, child: Text('mujhe daba do plzz')),
+          child: OutlinedButton(
+              onPressed: () {},
+              child: Text(
+                "plz mujhko daba do",
+                style: TextStyle(
+                  color: Color.fromARGB(255, 0, 0, 0),
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Arial',
+                ),
+              )),
         ),
       ),
     );
