@@ -5,14 +5,17 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter App',
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-      ),
-      home: Center(
-        child: Text("Aayush"),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Center(child: Text('hello World')),
+        ),
+        body: Center(
+          child: ElevatedButton(
+              onPressed: () {}, child: Text('mujhe daba do plzz')),
+        ),
       ),
     );
   }
