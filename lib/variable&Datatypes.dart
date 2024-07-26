@@ -4,11 +4,16 @@ void main() {
   stdout.write('enter you name:');
   var name = stdin.readLineSync();
   print('Welcome $name');
-  Human(); // creating an class object
+  var h = Human();
+  print(h.add(1, 9));
 
 //Declaration of Variables
-  int? a;
-  print(a);
 }
+//inlinne declaration
 
-class Human {}
+class Human {
+  int add(int a, int b) {
+    int sum = a + b;
+    return sum;
+  }
+}
