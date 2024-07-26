@@ -20,5 +20,10 @@ void main() {
   listNames.removeRange(0, 2);
   print("$names");
   print(listNames);
-  print("${listNames.length}");
+  print("Length: ${listNames.length}");
+  print("Reversed: ${listNames.reversed}");
+  print("First: ${listNames.first}");
+  print("Is Empty: ${listNames.isEmpty}");
+  print("Is not Empty: ${listNames.isNotEmpty}");
+  print("element at [1]: ${listNames.elementAt(1)}");
 }
