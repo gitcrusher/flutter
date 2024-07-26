@@ -4,9 +4,19 @@ void main() {
 
   var names = [];
   names.add("test");
-  names.add("test");
-  names.add("test");
-  names.add("test");
-  names.addAll(listNames);
+  names.add("fwfwfWPK");
+  names.add("ramiz");
+  names.add("hello");
+  // names.addAll(listNames);
+
+  // names.insert(2, 100);
+  // names.insertAll(4, listNames);
+
+  names[2] = "test";
+
+  listNames.replaceRange(0, 5, [1, 2, 3, 4]);
+
+  listNames.removeAt(3);
   print("$names");
+  print(listNames);
 }
