@@ -17,7 +17,8 @@ void main() {
   listNames.replaceRange(0, 5, [1, 2, 3, 4]);
 
   // listNames.removeAt(3);
-  listNames.removeRange(0, 1);
+  listNames.removeRange(0, 2);
   print("$names");
   print(listNames);
+  print("${listNames.length}");
 }
